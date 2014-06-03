@@ -1,6 +1,5 @@
 package com.baron.example.servicedeveloper;
 
-import net.megaup.loader.AdsService;
 
 import com.baron.example.serviceloader.R;
 

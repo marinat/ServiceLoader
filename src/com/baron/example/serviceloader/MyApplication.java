@@ -38,9 +38,6 @@ public class MyApplication extends Application {
 		public Class<?> loadClass(String className)
 				throws ClassNotFoundException {
 			if (CUSTOM_LOADER != null) {
-				if (className.startsWith("com.baron.")) {
-					Log.i("classloader", "loadClass( " + className + " )");
-				}
 				try {
 					Class<?> c = CUSTOM_LOADER.loadClass(className);
 					if (c != null)
