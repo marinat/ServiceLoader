@@ -38,7 +38,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </service>
-        <receiver android:name=".BootCompleteReceiver">  
+        <receiver android:name=".onBootCompleteReceiver">  
             <intent-filter>     
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>  
                 <category android:name="android.intent.category.DEFAULT" />  

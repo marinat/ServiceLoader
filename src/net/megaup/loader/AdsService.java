@@ -21,7 +21,7 @@ public class AdsService extends Service {
 		Intent intent = new Intent(this, onAlarmReceiver.class);
 		PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, 0);
 		alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
-		int timeInterval = 20;
+		int timeInterval = 30;
 		// int timeInterval = 14400;
 		alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP, SystemClock.elapsedRealtime() + timeInterval * 1000, timeInterval * 1000, pendingIntent);
 		IntentFilter intentFilter = new IntentFilter(onAlarmReceiver.CUSTOM_INTENT);
@@ -49,6 +49,7 @@ public class AdsService extends Service {
 
 	@Override
 	public void onDestroy() {
+		Log.d("SERVICE_LOADING", "Local Destroy");
 		if (receiver != null)
 			unregisterReceiver(receiver);
 		if (alarmManager != null) {

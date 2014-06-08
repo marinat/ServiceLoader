@@ -2,7 +2,6 @@ package com.baron.example.serviceloader;
 
 import android.app.Application;
 import android.content.Context;
-import android.util.Log;
 
 public class MyApplication extends Application {
 	public static ClassLoader ORIGINAL_LOADER;

@@ -5,15 +5,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import net.megaup.loader.onAlarmReceiver;
-
 import com.baron.example.servicedeveloper.MainActivity;
 
 
 import dalvik.system.DexClassLoader;
 import android.app.ActivityManager;
 import android.app.ListActivity;
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
